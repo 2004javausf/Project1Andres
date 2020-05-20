@@ -1,0 +1,27 @@
+PROJECT 1 USER STORIES
+
+As a user you must submit their info in a form(date, locaation, description, cost of the course etc)
+All this info should be stored in a DB
+The form must be created with JS HTML and css
+In order to get a reimbursement the user must prove that he passed the course
+As a user you are only allowed to claim up to 1000 a year
+The system should reset the reimbursment to 1000 every year.
+as a user you must wait for aproval of your reimbusment
+The system must have date validation
+The projected reimbursement must ve a read only field
+Reimbursement should be approved by the direct supervisor, departament head and the benefits coordinator
+If th reimbusrsement is denied the supervisor must give a reason
+If the supervisor does not approve/deny the request within a given ammount of time, the request is auto approved
+if the departament head does not approve/deny the request within a given ammount of time, the request is auto approved
+The benefits coordinator stage is no skippable.
+The BenCo can ask for additional info.
+The benCo can alter the ammount of the reimbursement
+if BenCo changes the ammoun of reimbursement, the employee must be notified
+As an employee I can choose to cancel the request
+If BenCo does not approve in timely manner an email should be sent to BenCos;s direct supervisor
+Benco can give a larger reibursement than the one requested
+Benco must provide a reason for a larger given ammount
+Employee should attach a grade
+Benco mus confirm that the grade is passing
+As a direct manager he/she must confirm the acceptance of the presentation/grade
+The grades/presentation should be accesed only by interested parties requestors/approvers.
