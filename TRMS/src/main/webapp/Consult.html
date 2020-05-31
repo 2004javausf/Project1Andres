@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Consult.css">
+<body>
+
+
+	<div class="w3-container">
+	
+		<input type="text" id="frIDInput" placeholder= "Enter info"></input>
+		<input class="button" type="submit" value="Get employee info" id= "frSubmitGet"/>
+		<table class="w3-table w3-green">	
+		<tr>	
+			<td class="w3-border">Form ID<h6 id= "form_id"></h6><td>
+			
+			<td class="w3-border">Name<h6 id= "emp_name"></h6><td>
+			
+			<td class="w3-border">Last Name<h6 id= "emp_last_name"></h6><td>
+			
+			<td class="w3-border">Location<h6 id= "location"></h6><td>
+			
+			<td class="w3-border">Reimbursement Amount<h6 id= "cost_ammount"></h6><td>
+			
+			<td class="w3-border">Start Event Date<h6 id= "dStart"></h6><td>
+			
+			<td class="w3-border">End Event Date<h6 id= "dEnd"></h6><td>
+			
+			<td class="w3-border">Course Type<h6 id= "type_course"></h6><td>
+			
+			<td class="w3-border">Grade<h6 id= "grade"></h6><td>
+		
+			<td class="w3-border">Status<h6 id= "status"></h6><td>
+		</tr>
+		</table>
+		
+	</div>
+		
+		<div>
+	    <button class="button" type="submit" id= "SubmitAccept">Accept</button>
+	    <button  class="button" type="submit" id= "SubmitDeny">Deny</button>
+	    <br>
+		<form method="get" action="Login.html">
+	    <button class="button" type="submit">Logout</button>
+		</form>
+		</div>	    
+			
+		
+	
+	<script type = "text/javascript" src = "Consult.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</body>
+</html>

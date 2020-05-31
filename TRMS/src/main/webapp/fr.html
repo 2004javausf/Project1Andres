@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TRMS</title>
+<link rel="stylesheet" href="Consult.css">
+<link rel="stylesheet" href="fr.css">
+</head>
+
+<body>
+	<div class="center">
+		<h2>Welcome to the TRMS App</h2>
+		<h3>Please fill up the following form in order to apply for a Reimbursement</h3>
+	</div>
+	
+	
+	<div class="center">
+	<form class="center" enctype="application/json"  method="POST" id="Form">
+	
+	Employee Name: <input type="text" name="emp_name">
+	<br>
+	Employee Last Name: <input type="text" name="emp_last_name">
+	<br>
+	Location <input type="text" name="location">
+	 <br>
+	 Reimbursement Amount <input type="text" name="cost_ammount">
+	 <br>
+	
+	 <label for="start">Start date of the course:</label>
+		<input type="date" id="dStart" name="dStart" value="yy-mm-dd" min="2018-01-01" max="2021-12-31">
+	 <br>
+	 <label for="current">End date of the course:</label>
+		<input type="date" id="dEnd" name="dEnd" value="yy-mm-dd" min="2018-01-01" max="2020-12-31">
+	  <br>
+	  <select id="type_course" name="type_course">
+		    <option value="University Courses">University Courses</option>
+		    <option value="Seminars">Direct Seminars"</option>
+		    <option value="Certification Preparation Classes">Certification Preparation Classes</option>
+		    <option value="Certification">Certification</option>
+		    <option value="Technical Training">Technical Training</option>
+		    <option value="Other">Other</option>
+		  </select>
+	<br>
+	  Grade <input type="text" name="grade">
+	 <br>
+	 
+	  
+	 <input class="button" type="submit" name="submitme" id="frFormSubmit">
+	
+	
+	</form>
+	<form method="get" action="Login.html">
+    <button class="button" type="submit">Logout</button>
+	</form>
+	
+	
+	<script type = "text/javascript" src = "fr.js"></script>
+	
+	
+
+</body>
+</html>
