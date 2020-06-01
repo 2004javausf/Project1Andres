@@ -43,11 +43,13 @@ public class LoginValidation extends HttpServlet {
 		System.out.println(username+" "+pass_word);
 		LoginDaoImpl rdi = new LoginDaoImpl();
 		List <RegisterBean> UserList = new ArrayList<RegisterBean>();
+		
 		RegisterBean user = new RegisterBean();
 		boolean l=false;
 		
 		try {
 			UserList = rdi.getLogin();
+			System.out.println(UserList);
 			for (int i=0;i<UserList.size();i++) {
 				if(UserList.get(i).getUsername().equalsIgnoreCase(username) && (UserList.get(i).getPass_word().equals(pass_word))){
 					user=UserList.get(i);

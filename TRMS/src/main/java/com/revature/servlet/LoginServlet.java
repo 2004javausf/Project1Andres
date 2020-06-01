@@ -61,6 +61,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 		
 			RegisterBean reg=null;
 			ObjectMapper mapp= new ObjectMapper();
+			System.out.println("Registration Post");
 			//convert JSON to java object
 			reg=mapp.readValue(request.getInputStream(), RegisterBean.class);
 			System.out.println();

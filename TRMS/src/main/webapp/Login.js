@@ -5,10 +5,18 @@ window.onload= function(){
    
 }
 
-//const loginForm = document.getElementById("login-form");
-//const loginButton = document.getElementById("login-form-submit");
-//const loginErrorMsg = document.getElementById("login-error-msg");
-
+function jsonBuilder(){
+    var elements= document.getElementById("register-form").elements;
+    var obj={};
+    for(var i=0; i<elements.length-1;i++){
+        var item=elements.item(i);
+        obj[item.name]=item.value;
+        console.log(obj);
+    }
+    var json=JSON.stringify(obj);
+    console.log(json);
+    return json;
+}
 
 
 function postReg(){

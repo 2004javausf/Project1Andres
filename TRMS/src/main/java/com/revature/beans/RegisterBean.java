@@ -6,6 +6,7 @@ public class RegisterBean {
 	private String username;
 	private String pass_word;
 	private String role_name;
+	
 	public RegisterBean(int login_id, String username, String pass_word, String role_name) {
 		super();
 		this.login_id = login_id;
@@ -13,10 +14,12 @@ public class RegisterBean {
 		this.pass_word = pass_word;
 		this.role_name = role_name;
 	}
+	
 	public RegisterBean() {
 		super();
 		
 	}
+	
 	public int getLogin_id() {
 		return login_id;
 	}
@@ -48,7 +51,4 @@ public class RegisterBean {
 	}
 	
 	
-	
-	
-
 }
